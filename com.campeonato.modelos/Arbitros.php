@@ -51,8 +51,5 @@ class Arbitros {
     function setEstado($estado) {
         $this->estado = $estado;
     }
-    
-    function teste2 (){
-        
-    }
+
 }
