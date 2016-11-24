@@ -82,5 +82,9 @@ class Times {
     function teste (){
         
     }
+    
+    function novoteste(){
+        
+    }
 
 }
