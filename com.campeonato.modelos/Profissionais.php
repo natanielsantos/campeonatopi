@@ -1,88 +1,82 @@
 <?php
 
-class Profissionais
-{
+class Profissionais {
 
-  private $idProfissionais;
-  private $nome;
-  private $dataNascimento;
-  private $rg;
-  private $posicao;
-  private $time;
-  private $salario;
-  private $habilidade;
+    private $idProfissionais;
+    private $nome;
+    private $dataNascimento;
+    private $rg;
+    private $posicao;
+    private $time;
+    private $salario;
+    private $habilidade;
 
-  public function Profissionais() {
-      
-  } 
-  function getIdProfissionais() {
-      return $this->idProfissionais;
-  }
+    public function Profissionais() {
+        
+    }
 
-  function getNome() {
-      return $this->nome;
-  }
+    function getIdProfissionais() {
+        return $this->idProfissionais;
+    }
 
-  function getDataNascimento() {
-      return $this->dataNascimento;
-  }
+    function getNome() {
+        return $this->nome;
+    }
 
-  function getRg() {
-      return $this->rg;
-  }
+    function getDataNascimento() {
+        return $this->dataNascimento;
+    }
 
-  function getPosicao() {
-      return $this->posicao;
-  }
+    function getRg() {
+        return $this->rg;
+    }
 
-  function getTime() {
-      return $this->time;
-  }
+    function getPosicao() {
+        return $this->posicao;
+    }
 
-  function getSalario() {
-      return $this->salario;
-  }
+    function getTime() {
+        return $this->time;
+    }
 
-  function getHabilidade() {
-      return $this->habilidade;
-  }
+    function getSalario() {
+        return $this->salario;
+    }
 
-  function setIdProfissionais($idProfissionais) {
-      $this->idProfissionais = $idProfissionais;
-  }
+    function getHabilidade() {
+        return $this->habilidade;
+    }
 
-  function setNome($nome) {
-      $this->nome = $nome;
-  }
+    function setIdProfissionais($idProfissionais) {
+        $this->idProfissionais = $idProfissionais;
+    }
 
-  function setDataNascimento($dataNascimento) {
-      $this->dataNascimento = $dataNascimento;
-  }
+    function setNome($nome) {
+        $this->nome = $nome;
+    }
 
-  function setRg($rg) {
-      $this->rg = $rg;
-  }
+    function setDataNascimento($dataNascimento) {
+        $this->dataNascimento = $dataNascimento;
+    }
 
-  function setPosicao($posicao) {
-      $this->posicao = $posicao;
-  }
+    function setRg($rg) {
+        $this->rg = $rg;
+    }
 
-  function setTime($time) {
-      $this->time = $time;
-  }
+    function setPosicao($posicao) {
+        $this->posicao = $posicao;
+    }
 
-  function setSalario($salario) {
-      $this->salario = $salario;
-  }
+    function setTime($time) {
+        $this->time = $time;
+    }
 
-  function setHabilidade($habilidade) {
-      $this->habilidade = $habilidade;
-  }
+    function setSalario($salario) {
+        $this->salario = $salario;
+    }
 
+    function setHabilidade($habilidade) {
+        $this->habilidade = $habilidade;
+    }
 
-
-
-
-
-} 
-?>
+}
