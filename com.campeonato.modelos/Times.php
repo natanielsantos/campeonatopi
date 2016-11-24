@@ -79,6 +79,8 @@ class Times {
         $this->ano = $ano;
     }
 
-
+    function testetime (){
+        
+    }
 
 }
