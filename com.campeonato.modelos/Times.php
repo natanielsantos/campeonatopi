@@ -86,5 +86,9 @@ class Times {
     function novoteste(){
         
     }
+    
+    function mudou(){
+        
+    }
 
 }
