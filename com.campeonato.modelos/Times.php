@@ -79,7 +79,7 @@ class Times {
         $this->ano = $ano;
     }
 
-    function testetime (){
+    function teste (){
         
     }
 
