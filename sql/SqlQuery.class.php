@@ -11,12 +11,12 @@ class SqlQuery {
     }
 
     public function setString($value) {
-        $value = mysql_real_escape_string($value);
+        //$value = mysqli_real_escape_string($value);
         $this->params[$this->idx++] = "'" . $value . "'";
     }
 
     public function set($value) {
-        $value = mysql_real_escape_string($value);
+      //  $value = mysqli_real_escape_string($value);
         $this->params[$this->idx++] = "'" . $value . "'";
     }
 

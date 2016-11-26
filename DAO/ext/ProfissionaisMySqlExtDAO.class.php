@@ -1,7 +1,7 @@
 <?php
 
-class ProfissionaisMySqlExtDAO extends ProfissionaisMySqlDAO{
-
-	
+class ProfissionaisMySqlExtDAO extends ProfissionaisMySqlDAO {
+    
 }
+
 ?>

@@ -1,7 +1,7 @@
 <?php
 
-class ArbitrosMySqlExtDAO extends ArbitrosMySqlDAO{
-
-	
+class ArbitrosMySqlExtDAO extends ArbitrosMySqlDAO {
+    
 }
+
 ?>

@@ -1,7 +1,7 @@
 <?php
 
-class PartidaMySqlExtDAO extends PartidaMySqlDAO{
-
-	
+class PartidaMySqlExtDAO extends PartidaMySqlDAO {
+    
 }
+
 ?>

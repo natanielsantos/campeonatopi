@@ -1,4 +1,8 @@
-
+<?php
+    header("Content-type: text/css");
+    $color = "green";        // <--- define the variable 
+echo '  
+/* --- start of css --- */
 form label {
 	float: left;
 	width: 150px;
@@ -13,7 +17,7 @@ form label {
 
 /*FORMATAR TABELAS*/
 
- table.t1 {
+ able.t1 {
     margin: 1em auto;
     border-collapse: collapse;
     font-family: Arial, Helvetica, sans-serif;
@@ -50,3 +54,5 @@ form label {
   .t1 tr *:nth-child(3), .t1 tr *:nth-child(4) {
     text-align: right;
   }
+
+/* --- end of css --- */';

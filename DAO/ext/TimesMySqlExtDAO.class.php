@@ -1,7 +1,7 @@
 <?php
 
-class TimesMySqlExtDAO extends TimesMySqlDAO{
-
-	
+class TimesMySqlExtDAO extends TimesMySqlDAO {
+    
 }
+
 ?>

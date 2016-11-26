@@ -1,19 +1,21 @@
 <?php
 
-class Connection{
-	private $connection;
+class Connection {
 
-	public function Connection(){
-		$this->connection = ConnectionFactory::getConnection();
-	}
+    private $connection;
 
-	public function close(){
-		ConnectionFactory::close($this->connection);
-	}
+    public function Connection() {
+        $this->connection = ConnectionFactory::getConnection();
+    }
 
-	
-	public function executeQuery($sql){
-		return mysqli_query($this->connection,$sql );
-	}
+    public function close() {
+        ConnectionFactory::close($this->connection);
+    }
+
+    public function executeQuery($sql) {
+        return mysqli_query($this->connection, $sql);
+    }
+
 }
+
 ?>

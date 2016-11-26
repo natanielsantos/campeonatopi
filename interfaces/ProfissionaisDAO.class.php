@@ -2,13 +2,13 @@
 
 interface ProfissionaisDAO {
 
-    public function load($idProfissionais, $timesIdTimes);
+    public function load($id);
 
     public function queryAll();
 
     public function queryAllOrderBy($orderColumn);
 
-    public function delete($idProfissionais, $timesIdTimes);
+    public function delete($idProfissionais);
 
     public function insert($profissionai);
 

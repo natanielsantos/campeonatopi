@@ -1,25 +1,16 @@
 <?php
 
-	class Profissionai{
-		
-		var $idProfissionais;
+class Profissionai {
 
-		var $nome;
+    var $idProfissionais;
+    var $nome;
+    var $dataNascimento;
+    var $rg;
+    var $posicao;
+    var $time;
+    var $salario;
+    var $habilidade;
 
-		var $dataNascimento;
+}
 
-		var $rg;
-
-		var $posicao;
-
-		var $time;
-
-		var $salario;
-
-		var $habilidade;
-
-		var $timesIdTimes;
-
-		
-	}
 ?>

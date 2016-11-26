@@ -1,7 +1,7 @@
 <?php
 
-class EstadiosMySqlExtDAO extends EstadiosMySqlDAO{
-
-	
+class EstadiosMySqlExtDAO extends EstadiosMySqlDAO {
+    
 }
+
 ?>
