@@ -14,9 +14,9 @@
 
 require_once('../../config.php');
 
-$nome = 'Nataniel';
+$nome = $_POST['nome'];
 
-$arr = DAOFactory::getProfissionaisDAO()->queryByNome('NataNIEL');
+$arr = DAOFactory::getProfissionaisDAO()->queryByNome($nome);
 
 echo '<table>'
  . '</thead> <tr><td>Nome</td>'

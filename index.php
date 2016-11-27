@@ -14,7 +14,7 @@ and open the template in the editor.
     <body>
         <?PHP
         
-         include_once 'conexao.php';
+         require_once 'config.php';
          
          echo '<table>';
          echo '<tr>';
@@ -26,18 +26,20 @@ and open the template in the editor.
          echo '<th>estado</th>';
          echo '</tr>';
          
-         $resultado = mysqli_query($conn,'SELECT * FROM Arbitros');
-         while (($row = mysqli_fetch_array($resultado, MYSQLI_ASSOC)) != NULL) {
+         $resultado = DAOFactory::getArbitrosDAO()->queryAll();
+         
+         for($i = 0; $i < count($resultado);$i++) {
+             $row = $resultado[$i];
+             
              echo '<tr>';
-             echo '<td>' . $row['idarbitros'] . '</td>';
-             echo '<td>' . $row['nome'] . '</td>';
-             echo '<td>' . $row['dataNascimento'] . '</td>';
-             echo '<td>' . $row['rg'] . '</td>';
-             echo '<td>' . $row['cidade'] . '</td>';
-             echo '<td>' . $row['estado'] . '</td>';
+             echo '<td>' . $row->idarbitros.'</td>';
+             echo '<td>' . $row->nome . '</td>';
+             echo '<td>' . $row->dataNascimento . '</td>';
+             echo '<td>' . $row->rg. '</td>';
+             echo '<td>' . $row->cidade. '</td>';
+             echo '<td>' . $row->estado. '</td>';
              echo '</tr>';
          }
-         mysqli_free_result($resultado);
          echo '</table>';
         ?>
     </body>

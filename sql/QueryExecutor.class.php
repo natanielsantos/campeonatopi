@@ -2,6 +2,8 @@
 
 class QueryExecutor {
 
+    
+    
     public static function execute($sqlQuery) {
         $transaction = Transaction::getCurrentTransaction();
         if (!$transaction) {
@@ -33,6 +35,7 @@ class QueryExecutor {
     }
 
     public static function executeUpdate($sqlQuery) {
+        $link = mysqli_connect("localhost", "root", "", "mydb");
         $transaction = Transaction::getCurrentTransaction();
         if (!$transaction) {
             $connection = new Connection();
@@ -42,14 +45,17 @@ class QueryExecutor {
         $query = $sqlQuery->getQuery();
         $result = $connection->executeQuery($query);
         if (!$result) {
-            throw new Exception("SQL Error: -->" . $query . "<--" . mysqli_error());
+            throw new Exception("SQL Error: -->" . $query . "<--" . mysqli_error($link));
         }
-        return mysqli_affected_rows();
+        
+        
+        return mysqli_affected_rows($link);
     }
 
     public static function executeInsert($sqlQuery) {
         QueryExecutor::executeUpdate($sqlQuery);
-        return mysqli_insert_id();
+        $link = mysqli_connect("localhost", "root", "", "mydb");
+        return mysqli_insert_id($link);
     }
 
     public static function queryForString($sqlQuery) {
@@ -68,5 +74,3 @@ class QueryExecutor {
     }
 
 }
-
-?>
