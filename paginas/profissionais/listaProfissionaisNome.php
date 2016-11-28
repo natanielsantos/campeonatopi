@@ -5,11 +5,6 @@
  </head>
 <body>
 
-<h1>Exibir dados com PHP/MySql</h1>
-
-
-
-
 <?php
 
 require_once('../../config.php');

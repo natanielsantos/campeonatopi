@@ -46,8 +46,8 @@ for ($i = 0; $i < count($arr); $i++) {
     . '<td>' . $row->time . '</td>'
     . '<td>' . $row->salario . '</td>'
     . '<td>' . $row->habilidade . '</td>'
-    . '<td><form name="excluir" method="post" action="deleta.php?id='.$row->idProfissionais.'">
-        <input type="submit" value="EXCLUIR" name="excluir" /><input type="hidden" name="idProfissionais" readonly="readonly" />
+    . '<td><form name="excluir" method="post" action="formularioAltera.php?id='.$row->idProfissionais.'">
+        <input type="submit" value="ALTERAR" name="alterar" /><input type="hidden" name="idProfissionais" readonly="readonly" />
 </form> </td></tr>';
 }
 echo '</table>';
