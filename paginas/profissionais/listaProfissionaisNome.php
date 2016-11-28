@@ -1,6 +1,6 @@
 <html>
  <head>
-  <link rel="stylesheet" type="text/css" href="../../css/estilo.php" />
+  <link rel="stylesheet" type="text/css" href="../../estilos.css" />
   <title>Exibir dados com PHP/MySql</title>
  </head>
 <body>
@@ -13,16 +13,16 @@ $nome = $_POST['nome'];
 
 $arr = DAOFactory::getProfissionaisDAO()->queryByNome($nome);
 
-echo '<table>'
- . '</thead> <tr><td>Nome</td>'
- . '<td>Data de Nascimento</td>'
- . '<td>RG</td>'
- . '<td>Posição</td>'
- . '<td>Time</td>'
- . '<td>Salário</td>'
- . '<td>Habilidade</td></tr> </thead>'
+echo '<div><table id=customers>'
+ . '</thead><tr><th>Nome</th>'
+ . '<th>Data de Nascimento</th>'
+ . '<th>RG</th>'
+ . '<th>Posição</th>'
+ . '<th>Time</th>'
+ . '<th>Salário</th>'
+ . '<th>Habilidade</th></tr> </thead>'
  . '<tfoot>
-<tr><th colspan="4">Tabela de listagem de profissionais por nome</th></tr>
+<tr>Tabela de listagem de profissionais por nome</tr>
 </tfoot>';
 
 for ($i = 0; $i < count($arr); $i++) {
@@ -37,7 +37,7 @@ for ($i = 0; $i < count($arr); $i++) {
     . '<td>' . $row->habilidade . '</td></tr>'
     . '</tbody>';
 }
-echo '</table>';
+echo '</table></div>';
 ?>
 </body>
 </html>

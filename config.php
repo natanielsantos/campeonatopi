@@ -9,7 +9,7 @@
 	require_once('sql/SqlQuery.class.php');
 	require_once('DAO/ArrayList.class.php');
 	require_once('interfaces/DAOFactory.class.php');
-        require_once ('paginas/menu.html');
+        require_once ('menu.html');
         //require_once ('css/estilos.css');
  	
         // ÁRBITROS

@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="../../estilos.css" />
 <?php
 
 require_once('../../config.php');
